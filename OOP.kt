@@ -1,13 +1,9 @@
 fun main() {
+    var user1 = User()
+    user1.saldo = 0
+    user1.titular = "Erick"
 
-    val userA = User()
-    userA.nome = "Erick"
-
-
-
-}
-class User{
-
-    var nome: String = ""
-
+    user1.depositar(1200)
+    user1.sacar(500)
+    user1.buscarSaldo()
 }
