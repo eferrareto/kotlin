@@ -1,9 +1,6 @@
 fun main() {
-    var user1 = User()
-    user1.saldo = 0
-    user1.titular = "Erick"
+   val fruitA = Fruit()
+    fruitA.buy("Morango", 4.50)
 
-    user1.depositar(1200)
-    user1.sacar(500)
-    user1.buscarSaldo()
+
 }
