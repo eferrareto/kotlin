@@ -1,9 +1,6 @@
 
 class Fruit(name: String, price: Double, saldo : Double) {
 
-    init {
-        println("Olá tudo bem? você possuí ${product} produtos no estoque, e o seu saldo é de ${prices}  ")
-    }
 
     constructor(name: String, price: Double) : this(name, price, saldo = 0.0)
 
