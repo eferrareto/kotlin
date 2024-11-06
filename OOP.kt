@@ -1,10 +1,7 @@
 fun main() {
-    var lojinhDoErick = Loja()
-    var produto1 = lojinhDoErick.Produto("Camisa da Nike", 145.80, "Camisetas")
-    println("Produto: ${produto1.nome}")
-    println("Preço: ${produto1.preco}")
-    println("Categoria: ${produto1.categoria}")
-
+    var escola = Escola()
+    var aluno = escola.Aluno("Erick", "9ºano", 10.0)
+    aluno.imprimirInfo()
 }
 
 class Ps4Controller{
@@ -37,4 +34,18 @@ class Loja{
         println("Preço: $preco")
         println("Categoria: $categoria")
     }
+}
+
+class Escola{
+    inner class Aluno(var nome : String, var turma : String, var nota : Double){
+        fun imprimirInfo(){
+            println("Aluno: $nome")
+            println("Turma: $turma")
+            println("Nota: $nota")
+        }
+    }
+    fun matricularAluno(nome: String, turma: String,nota: Double):Aluno{
+        return Aluno(nome, turma, nota)
+    }
+
 }
