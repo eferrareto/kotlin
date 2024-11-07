@@ -1,7 +1,5 @@
 fun main() {
-    var escola = Escola()
-    var aluno = escola.Aluno("Erick", "9ºano", 10.0)
-    aluno.imprimirInfo()
+
 }
 
 class Ps4Controller{
@@ -35,7 +33,6 @@ class Loja{
         println("Categoria: $categoria")
     }
 }
-
 class Escola{
     inner class Aluno(var nome : String, var turma : String, var nota : Double){
         fun imprimirInfo(){
@@ -48,4 +45,17 @@ class Escola{
         return Aluno(nome, turma, nota)
     }
 
+}
+class Exercito(var nome: String, var tamanho : Double){
+    inner class Soldado(var nome : String, var patente : String, var habilidade : Int){
+
+    }
+    fun treinarSoldado(soldado : Soldado){
+        soldado.habilidade += 10
+    }
+    fun soldadoInfo(soldado: Soldado){
+        println("Soldado: ${soldado.nome}")
+        println("Patente: ${soldado.patente}")
+        println("Habilidade: ${soldado.habilidade}")
+    }
 }
