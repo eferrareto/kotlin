@@ -1,6 +1,16 @@
 fun main() {
 
 }
+enum class TipoDeCafe{
+    Espresso,
+    Cappuccino,
+    Latte,
+    Mocha
+}
+fun fazerPedido(tipo : TipoDeCafe){
+    println("O café que você escolheu foi ${tipo}")
+}
+
 
 class Ps4Controller{
     val botao1 = "Triangulo"
